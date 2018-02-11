@@ -3,18 +3,19 @@ require './task.rb'
 class Todolist
 
   def initialize(description, due_date)
-    @task = []
+    @tasks = []
   end
 
   def add_task(task)
-    @task << task
+    @tasks << task
   end
+end
 
-Todolist.new = @tasks
+
+list = Todolist.new
 
 task1 = Task.new('homework', 'Monday')
 task2 = Task.new('laundry', 'Saturday')
 task3 = Task.new('shopping', 'Sunday')
 
-
-end
+puts task1.add_task

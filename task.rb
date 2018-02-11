@@ -1,6 +1,4 @@
 class Task
-  @@description = 'description'
-  @@due_date = 'due_date'
 
   def initialize(description, due_date)
     @description = description
@@ -8,11 +6,11 @@ class Task
   end
 
   #writers
-  def description(description)
+  def description=(description)
     @description = description
   end
 
-  def due_date
+  def due_date=(due_date)
     @due_date = due_date
   end
 
